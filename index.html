@@ -12,7 +12,7 @@
             align-items: center;
             justify-content: center;
             background-color: #6C2DB6; /* Matching the background color */
-            background-image: url('./bonza-static-website.jpeg');
+            /* background-image: url('./bonza-static-website.jpeg'); */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -25,16 +25,31 @@
             text-align: center;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
         }
+        .redirect-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .logo {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 100px; /* Adjust the size as needed */
+        }
     </style>
 </head>
 <body>
+    <img src="./bonza-logo-transparent.png" alt="Bonza Aviation Logo" class="logo">
     <div class="redirect-message">
-        Click here for enquiries for Bonza Aviation Pty Ltd (in administration)
+        <button class="redirect-button" onclick="window.location.href='https://www.hallchadwick.com.au/bonza-aviation-pty-ltd-in-liquidation/'">Click here for enquiries for Bonza Aviation Pty Ltd (in administration)</button>
     </div>
-    <script>
-        setTimeout(function(){
-            window.location.href = "https://www.hallchadwick.com.au/bonza-aviation-pty-ltd-in-liquidation/";
-        }, 1000); // Redirects after 5 seconds
-    </script>
 </body>
 </html>
